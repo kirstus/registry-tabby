@@ -117,5 +117,5 @@
       "https://modelscope.cn/api/v1/models/TabbyML/CodeLlama-7B/repo?FilePath=ggml/ggml-model-q8_0.gguf"
     ],
     "sha256": "993e512614436792cf10653dcb9e6ef9fd3fe9d60e0784209305c1dc3a29e7fd"
-  },
+  }
 ]
