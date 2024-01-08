@@ -104,5 +104,18 @@
       "https://huggingface.co/TheBloke/deepseek-coder-6.7B-base-GGUF/resolve/main/deepseek-coder-6.7b-base.Q8_0.gguf"
     ],
     "sha256": "a2f82242ac5e465037cbf1ed754f04f0be044ee196e1589905f9e4dcd0e6559d"
-  }
+  },
+    {
+    "name": "CodeLlama-7B-instruct",
+    "provider_url": "https://huggingface.co/codellama/CodeLlama-7b-instruct-hf",
+    "license_name": "Llama 2",
+    "license_url": "https://github.com/facebookresearch/llama/blob/main/LICENSE",
+    "prompt_template": "<PRE> {prefix} <SUF>{suffix} <MID>",
+    "chat_template":  "<s>{% for message in messages %}{% if message['role'] == 'user' %}{{ '[INST] ' + message['content'] + ' [/INST]' }}{% elif message['role'] == 'assistant' %}{{ message['content'] + '</s> ' }}{% endif %}{% endfor %}",
+    "urls": [
+      "https://huggingface.co/TabbyML/CodeLlama-7B/resolve/main/ggml/ggml-model-q8_0.gguf",
+      "https://modelscope.cn/api/v1/models/TabbyML/CodeLlama-7B/repo?FilePath=ggml/ggml-model-q8_0.gguf"
+    ],
+    "sha256": "993e512614436792cf10653dcb9e6ef9fd3fe9d60e0784209305c1dc3a29e7fd"
+  },
 ]
